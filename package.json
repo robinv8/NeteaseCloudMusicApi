@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node app.js",
     "test": "mocha -r intelli-espower-loader -t 20000 test",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "build": "export PORT=80&&node ./app.js"
   },
   "lint-staged": {
     "*.js": ["prettier --write", "git add"]
